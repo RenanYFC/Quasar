@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Strait&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background-color: #351159;
+}
+
+#header {
+    height: 20%;
+    width: 100%;
+    background-color: #2B1045;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header img {
+    height: 100%;
+}
+
+#banner {
+    width: 95%;
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+#banner-img #banner-img {
+    height: 100%;
+}
+
+#figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#figure #shadow {
+    width: 554.56px;
+    height: 554.56px;
+    background: #7B22A4;
+    filter: blur(125px);
+    transform: rotate(-36.95deg);
+    position: absolute;
+
+}
+
+#banner-text {
+    height: 100%;
+    width: 100%;
+    font-family: "Strait", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: #E4AAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#banner-text h1 {
+    width: 80%;
+    font-size: 3em;
+    letter-spacing: 4%;
+    text-align: center;
+}
+
+#banner-img img {
+    width: 100%;
+}
+
+
+#line {
+    width: 100%;
+    height: 0.005em;
+    background-color: #fff;
+    margin: 1.5em 0;
+}
+
+#games {
+    padding: 0 1em;
+    display: flex;
+    gap: 5vw;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#games-h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #EEC8FF;
+    margin: 2.1em 1em;
+}
+
+.card-game {
+    background: linear-gradient(150.23deg, rgba(53, 17, 89, 0.1) -1.56%, rgba(165, 115, 196, 0.1) 100%);
+    border-radius: 52px;
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-game:hover {
+    transform: scale(1.01);
+}
+
+.results {
+    position: absolute;
+    left: 14em;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 2em;
+    margin-right: 2em;
+    white-space: nowrap;
+}
+
+.stars {
+    width: 1em;
+}
+
+.sales {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #EEC8FF;
+    white-space: nowrap;
+}
+
+.img-game {
+    width: 20vw;
+    height: 20vw;
+    margin-top: 6em;
+    margin-bottom: 1.5em;
+    background-image: url("https://sm.ign.com/ign_br/game/g/grand-thef/grand-theft-auto-v_cts9.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.text-container {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+     font-style: normal;
+     color: #EEC8FF;
+     width: 100%;
+    margin-left: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.offer, .old-price {
+    color: #CF2DAC;
+    font-weight: 300;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.current-price {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.text-container .title-game {
+    font-size: 1.3em;
+}
+
+.price {
+    font-size: 1.2em;
+}
+
+.card-game button {
+    width: 13em;
+    padding: 0.8em 0;
+    background-color: #65228F;
+    outline: 0;
+    border: 0;
+    color: #EEC8FF;
+    border-radius: 0.9em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    margin: 2em 0;
+    cursor: pointer;
+}
+
+.button-effect:active {
+    transform: scale(0.95);
+    transition: 100ms ease-out;
+}
+
+
+footer {
+    width: 100%;
+    height: 2em;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 56%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+}
+
+#description {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #480E6B;
+    border-radius: 10px;
+    height: 70%;
+}
+
+#description #wave {
+    width: 100%;
+}
+
+#exit-btn {
+    width: 7%;
+    margin-top: 3vw;
+}
+
+#banner-text a {
+    display: block;
+    background-color: #7B22A4;
+    border: 0;
+    outline: 0;
+    border-radius: 0.5em;
+    padding: 3% 10%;
+    font-family: "Strait", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+#exit-btn:hover {
+    cursor: pointer;
+}
+
+#description-content {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    width: 70%;
+    margin-top: 3vw;
+    font-size: 1.2em;
+}
+
+h3 {
+    position: absolute;
+    font-size: 5em;
+    
+}
+
+@media screen and (max-width: 1280px) {
+
+    #banner-img img {
+        width: 70%;
+    }
+
+    #banner {
+        flex-direction: column;
+    }
+
+    #games {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-game {
+        width: 45vw;
+        border-radius: 40px;
+    }
+  
+
+    .img-game {
+        width: 30vw;
+        height: 30vw;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #exit-btn {
+        width: 10%;
+    }
+}
